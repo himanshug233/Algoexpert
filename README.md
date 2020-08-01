@@ -1,2 +1,2 @@
 # Algoexpert
-Solution to the interview questions on github
+Solution to the interview questions on algoexpert.io
