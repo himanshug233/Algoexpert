@@ -28,18 +28,18 @@ bool isValidSubsequence(vector<int> array, vector<int> sequence) {
   return seqindex == sequence.size();
 }
 
-//2
+//Solution 2
 
 using namespace std;
 
 bool isValidSubsequence(vector<int> array, vector<int> sequence) {
-  int arrayindex = 0;
 	int seqindex = 0;
-	while(arrayindex < array.size() && seqindex < sequence.size()){
-		if( array[arrayindex] == sequence[seqindex]){
+	for(auto value : array){
+		if(seqindex == sequence.size())
+			break;
+		if(value == sequence[seqindex]){
 			seqindex++;
 		}
-		arrayindex++;
 	}
   return seqindex == sequence.size();
 }

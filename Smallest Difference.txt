@@ -25,7 +25,7 @@ Sample Output
 using namespace std;
 
 vector<int> smallestDifference(vector<int> arrayOne, vector<int> arrayTwo) {
-  sort(arrayOne.begin(),arrayOne.end());
+        sort(arrayOne.begin(),arrayOne.end());
 	sort(arrayTwo.begin(),arrayTwo.end());
 	int smallestsum = INT_MAX;
 	int currentsum;
@@ -47,7 +47,7 @@ vector<int> smallestDifference(vector<int> arrayOne, vector<int> arrayTwo) {
 		
 		if(smallestsum > currentsum){
 			smallestsum = currentsum;
-			cout<<smallestsum<<" ";
+			//cout<<smallestsum<<" ";
 			smallestpair = {firstnum, secondnum};
 		}
 	}
